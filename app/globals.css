@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #ffffff;
+  --text: #0a0a0a;
+  --muted: #6b6b6b;
+  --accent: #ef4444; /* light red */
+  --border: #e5e5e5;
+}
+
+[data-theme="dark"] {
+  --bg: #0a0a0a;
+  --text: #fafafa;
+  --muted: #a3a3a3;
+  --accent: #f87171;
+  --border: #262626;
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.nav-link {
+  @apply text-gray-700 hover:text-red-600 transition;
+}
+
+.dropdown {
+  @apply absolute left-0 top-full hidden min-w-[240px] rounded border bg-white shadow-lg group-hover:block;
+}
+
+.dropdown a {
+  @apply block px-4 py-2 text-gray-700 hover:bg-red-50 hover:text-red-600;
+}
+/* Hide scrollbar for Chrome, Safari and Edge */
+.scrollbar-hide::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* Hide scrollbar for Firefox */
+.scrollbar-hide {
+  scrollbar-width: none !important;
+}
+
+/* Hide scrollbar for IE */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+}
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 30s linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scroll-right 30s linear infinite;
+}
+
+/* Optional: pause on hover */
+.animate-scroll-left:hover,
+.animate-scroll-right:hover {
+  animation-play-state: paused;
+}
