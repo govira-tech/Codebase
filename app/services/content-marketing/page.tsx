@@ -86,18 +86,18 @@ export default function ContentMarketingPage() {
       <main className="min-h-screen">
         {/* Combined Breadcrumb + Hero Section */}
         <section className="bg-white pt-24 pb-16 md:pb-20 px-6 md:px-12">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7xl mx-auto px-6">
             {/* Breadcrumb */}
-            <nav className="text-sm text-gray-600 mb-4">
-              <Link href="/" className="hover:text-red-600 transition-colors">
+            <nav className="text-sm text-gray-800 mb-4">
+              <Link href="/" className="hover:text-red-500 font-bold">
                 Home
-              </Link>
-              <span className="mx-2">&gt;</span>
-              <Link href="/services" className="hover:text-red-600 transition-colors">
+              </Link>{' '}
+              &gt;{' '}
+              <Link href="/services" className="hover:text-red-500 font-bold">
                 Services
-              </Link>
-              <span className="mx-2">&gt;</span>
-              <span className="text-gray-900">Content Marketing</span>
+              </Link>{' '}
+              &gt;{' '}
+              <span className="font-semibold text-gray-500">Content Marketing</span>
             </nav>
 
             {/* Hero Content */}
@@ -113,7 +113,7 @@ export default function ContentMarketingPage() {
 
         {/* Our Content Marketing Services */}
         <section className="bg-white py-8 md:py-12 px-6 md:px-12">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7xl mx-auto px-6">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
               Our Content Marketing Services
             </h2>
@@ -144,7 +144,7 @@ export default function ContentMarketingPage() {
 
         {/* Content Marketing Features We Deliver */}
         <section className="bg-white py-8 md:py-12 px-6 md:px-12">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7xl mx-auto px-6">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
               Content Marketing Features We Deliver
             </h2>
@@ -177,7 +177,7 @@ export default function ContentMarketingPage() {
 
         {/* How Content Marketing Helps Your Business Grow & Why Choose Govira */}
         <section className="bg-white py-8 md:py-12 px-6 md:px-12">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {/* How Content Marketing Helps */}
               <div>
@@ -214,7 +214,7 @@ export default function ContentMarketingPage() {
 
         {/* CTA Section */}
         <section className="bg-white py-16 md:py-20 px-6 md:px-12">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center px-6">
             <h2 className="text-3xl md:text-4xl font-bold text-red-600 mb-6">
               Ready to Build Trust & Drive Growth?
             </h2>

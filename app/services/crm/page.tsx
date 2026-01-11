@@ -96,9 +96,9 @@ export default function CRMPage() {
       <Navbar />
 
       {/* Breadcrumb + Hero Section */}
-      <section className="pt-24 pb-16 md:pb-20 px-6 md:px-12">
+      <section className="pt-24 pb-16 md:pb-20  md:px-12">
         <div className="max-w-7xl mx-auto">
-          <nav className="text-sm text-gray-800 mb-4">
+          <nav className="text-sm px-6 text-gray-800 mb-4">
             <Link href="/" className="hover:text-red-500 font-bold">
               Home
             </Link>{' '}
@@ -107,12 +107,12 @@ export default function CRMPage() {
               Services
             </Link>{' '}
             &gt;{' '}
-            <span className="font-semibold text-gray-500">Customer Relationship Management (CRM)</span>
+            <span className="font-semibold px-6 text-gray-500">Customer Relationship Management (CRM)</span>
           </nav>
 
           <div>
-            <h1 className="text-red-500 text-3xl md:text-4xl font-bold mb-4">Customer Relationship Management (CRM)</h1>
-            <p className="text-gray-700 text-lg md:text-xl max-w-3xl leading-relaxed">
+            <h1 className="text-red-500 text-3xl md:text-4xl px-6 font-bold mb-4">Customer Relationship Management (CRM)</h1>
+            <p className="text-gray-700 text-lg md:text-xl px-6 max-w-3xl leading-relaxed">
               Streamline customer relationships, improve sales efficiency, and enhance customer engagement with Govira's powerful CRM solutions. 
               We design and implement CRM systems that centralize data, automate workflows, and help your teams close more deals.
             </p>
@@ -122,7 +122,7 @@ export default function CRMPage() {
 
       {/* Services Grid */}
       <section className="py-8 md:py-12 px-6 md:px-12">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-center text-3xl md:text-4xl font-bold mb-12 text-gray-900">
             Key CRM Features
           </h2>
@@ -149,7 +149,7 @@ export default function CRMPage() {
 
       {/* Integral Role of CRM in Marketing Section */}
       <section className="py-16 md:py-20 px-6 md:px-12 bg-white">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-center text-3xl md:text-4xl font-bold mb-12 text-gray-900">
             Integral Role of CRM in Marketing
           </h2>
@@ -176,7 +176,7 @@ export default function CRMPage() {
 
       {/* Business Benefits & Industries */}
       <section className="py-16 md:py-20 px-6 md:px-12">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Left Column - Business Benefits */}
             <div>
@@ -214,21 +214,23 @@ export default function CRMPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="mt-20 text-center px-6">
-        <h2 className="text-3xl font-semibold mb-6">Ready to Implement a Smarter CRM System?</h2>
-        <p className="text-gray-600 mb-8">
-          Transform the way you manage customers and grow your business with Govira's CRM solutions.
-        </p>
-        <div className="flex justify-center gap-6 flex-wrap">
-          <Link href="/contact" className="rounded-full bg-red-600 px-8 py-3 text-white hover:bg-red-700 transition">
-            Talk to Our CRM Experts
-          </Link>
-          <a
-            href="https://wa.me/91 9701935111"
-            className="rounded-full border border-green-600 px-8 py-3 text-green-600 hover:bg-green-600 hover:text-white transition"
-          >
-            Chat on WhatsApp
-          </a>
+      <section className="mt-20 text-center px-6 md:px-12">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-3xl font-semibold mb-6">Ready to Implement a Smarter CRM System?</h2>
+          <p className="text-gray-600 mb-8">
+            Transform the way you manage customers and grow your business with Govira's CRM solutions.
+          </p>
+          <div className="flex justify-center gap-6 flex-wrap">
+            <Link href="/contact" className="rounded-full bg-red-600 px-8 py-3 text-white hover:bg-red-700 transition">
+              Talk to Our CRM Experts
+            </Link>
+            <a
+              href="https://wa.me/91 9701935111"
+              className="rounded-full border border-green-600 px-8 py-3 text-green-600 hover:bg-green-600 hover:text-white transition"
+            >
+              Chat on WhatsApp
+            </a>
+          </div>
         </div>
       </section>
 
