@@ -93,23 +93,23 @@ export default function EmailMarketingPage() {
         <section className="bg-white pt-24 pb-16 md:pb-20 px-6 md:px-12">
           <div className="max-w-7xl mx-auto">
             {/* Breadcrumb */}
-            <nav className="text-sm text-gray-600 mb-4">
-              <Link href="/" className="hover:text-red-600 transition-colors">
+            <nav className="text-sm text-gray-800 px-6 mb-4">
+              <Link href="/" className="hover:text-red-500 font-bold">
                 Home
-              </Link>
-              <span className="mx-2">&gt;</span>
-              <Link href="/services" className="hover:text-red-600 transition-colors">
+              </Link>{' '}
+              &gt;{' '}
+              <Link href="/services" className="hover:text-red-500 font-bold">
                 Services
-              </Link>
-              <span className="mx-2">&gt;</span>
-              <span className="text-gray-900">Email Marketing</span>
+              </Link>{' '}
+              &gt;{' '}
+              <span className="font-semibold text-gray-500">Email Marketing</span>
             </nav>
 
             {/* Hero Content */}
-            <h1 className="text-2xl md:text-3xl font-bold text-red-600 mb-6">
+            <h1 className="text-2xl md:text-3xl px-6  font-bold text-red-600 mb-6">
               Email Marketing Services That Drive Engagement & Conversions
             </h1>
-            <p className="text-lg md:text-xl text-gray-700 max-w-3xl leading-relaxed">
+            <p className="text-lg md:text-xl px-6  text-gray-700 max-w-3xl leading-relaxed">
               Boost customer engagement, nurture leads, and increase conversions with Govira's result-driven email marketing services. 
               We create targeted, personalized, and automated email campaigns that deliver measurable ROI.
             </p>
@@ -118,7 +118,7 @@ export default function EmailMarketingPage() {
 
         {/* Our Email Marketing Services */}
         <section className="bg-white py-8 md:py-12 px-6 md:px-12">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7xl mx-auto px-6">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
               Our Email Marketing Services
             </h2>
@@ -149,7 +149,7 @@ export default function EmailMarketingPage() {
 
         {/* Email Marketing Features We Deliver */}
         <section className="bg-white py-8 md:py-12 px-6 md:px-12">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7xl mx-auto px-6">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
               Email Marketing Features We Deliver
             </h2>
@@ -182,7 +182,7 @@ export default function EmailMarketingPage() {
 
         {/* How Email Marketing Helps Your Business Grow & Why Choose Govira */}
         <section className="bg-white py-8 md:py-12 px-6 md:px-12">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {/* How Email Marketing Helps */}
               <div>
@@ -219,7 +219,7 @@ export default function EmailMarketingPage() {
 
         {/* CTA Section */}
         <section className="bg-white py-16 md:py-20 px-6 md:px-12">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center px-6">
             <h2 className="text-3xl md:text-4xl font-bold text-red-600 mb-6">
               Ready to Boost Engagement & Drive Conversions?
             </h2>

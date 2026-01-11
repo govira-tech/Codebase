@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { FaCartShopping, FaBox, FaCreditCard, FaArrowTrendUp, FaWrench, FaMobile, FaShield, FaChartLine, FaLock, FaRocket, FaHeadset } from 'react-icons/fa6';
+import { FaCartShopping, FaBox, FaCreditCard, FaArrowTrendUp, FaWrench, FaMobile, FaShield, FaChartLine, FaLock, FaRocket, FaHeadset, FaCircleCheck } from 'react-icons/fa6';
 import Button from '@/components/ui/Button';
 import Navbar from '@/components/navigation/Navbar';
 import Footer from '@/components/footer/Footer';
@@ -207,44 +207,44 @@ export default function EcommercePage() {
         </div>
       </section>
 
-      {/* Does Your Business Need */}
-      <section className="py-16 md:py-20 px-6 md:px-12">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900">
-            Does Your Business Need Professional E-Commerce Development?
-          </h2>
+      {/* Does Your Business Need + Why Choose Govira */}
+      <section className="py-8 md:py-12 px-6 md:px-12">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* Does Your Business Need */}
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
+                Does Your Business Need Professional E-Commerce Development?
+              </h2>
+              <p className="text-gray-700 text-lg mb-8 leading-relaxed">
+                In today's digital world, having a strong online store is essential. A professional e-commerce platform 
+                can significantly impact your business success. If you're looking to increase sales, improve customer experience, 
+                and stay competitive, it's time to invest in quality e-commerce development.
+              </p>
+              <ul className="space-y-4">
+                {businessNeeds.map((item, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <span className="text-red-500 text-xl mt-0.5">•</span>
+                    <span className="text-gray-700 text-lg">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-          <p className="text-gray-700 text-lg mb-8 leading-relaxed max-w-3xl">
-            In today's digital world, having a strong online store is essential. A professional e-commerce platform 
-            can significantly impact your business success. If you're looking to increase sales, improve customer experience, 
-            and stay competitive, it's time to invest in quality e-commerce development.
-          </p>
-
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl">
-            {businessNeeds.map((item, index) => (
-              <li key={index} className="flex items-center gap-3 text-gray-800">
-                <span className="w-2 h-2 bg-red-500 rounded-full flex-shrink-0"></span>
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* Why Choose Govira */}
-      <section className="py-16 md:py-20 px-6 md:px-12">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900">
-            Why Choose Govira
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
-            {whyChoose.map((point, index) => (
-              <div key={index} className="flex items-start gap-3">
-                <span className="w-5 h-5 text-red-500 flex-shrink-0 mt-1 font-bold">✓</span>
-                <p className="text-gray-800">{point}</p>
-              </div>
-            ))}
+            {/* Why Choose Govira */}
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
+                Why Choose Govira
+              </h2>
+              <ul className="space-y-4">
+                {whyChoose.map((point, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <FaCircleCheck className="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700 text-lg">{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
