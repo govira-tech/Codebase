@@ -1,240 +1,202 @@
+"use client";
 
-'use client';
-
-import Link from 'next/link';
-import { FaDatabase, FaChartLine, FaUsers, FaGgCircle, FaArrowsRotate, FaShieldCat, FaBullseye, FaEnvelope, FaChartBar, FaClock } from 'react-icons/fa6';
-import Navbar from '@/components/navigation/Navbar';
-import Footer from '@/components/footer/Footer';
+import React from "react";
+import Link from "next/link";
+import {
+  FaDatabase,
+  FaUsers,
+  FaChartLine,
+  FaArrowsRotate,
+  FaGgCircle,
+  FaShieldCat,
+  FaBullseye,
+  FaEnvelope,
+  FaChartBar,
+  FaClock,
+} from "react-icons/fa6";
+import Footer from "@/components/footer/Footer";
 
 export default function CRMPage() {
-
-  const keyPoints = [
+  const processSteps = [
     {
-      icon: FaDatabase,
-      title: 'Centralized Customer Intelligence',
-      description: 'Govira CRM unifies customer data, interactions, and history into one powerful platform for better visibility and decision-making.',
+      title: "Centralized Customer Intelligence",
+      icon: <FaDatabase size={30} />,
+      desc: "Unify customer data, interactions, and history into a single CRM platform for complete visibility and smarter decisions.",
     },
     {
-      icon: FaArrowsRotate,
-      title: 'Sales Process Automation',
-      description: 'Automate lead assignment, follow-ups, reminders, and deal tracking to help sales teams close faster with less manual effort.',
+      title: "Sales Process Automation",
+      icon: <FaArrowsRotate size={30} />,
+      desc: "Automate lead assignment, follow-ups, reminders, and deal tracking to help teams close deals faster.",
     },
     {
-      icon: FaUsers,
-      title: 'Personalized Customer Engagement',
-      description: 'Deliver tailored communication based on customer behavior, preferences, and lifecycle stage.',
+      title: "Personalized Customer Engagement",
+      icon: <FaUsers size={30} />,
+      desc: "Deliver personalized communication based on customer behavior, preferences, and lifecycle stage.",
     },
     {
-      icon: FaChartLine,
-      title: 'Real-Time Insights & Reporting',
-      description: 'Gain actionable insights through dashboards and analytics that track sales performance and customer engagement.',
+      title: "Real-Time Insights & Reporting",
+      icon: <FaChartLine size={30} />,
+      desc: "Monitor sales pipelines, customer engagement, and team performance through real-time dashboards.",
     },
     {
-      icon: FaGgCircle,
-      title: 'Seamless Tool Integration',
-      description: 'Integrate CRM with marketing, email, payment, ERP, and support systems for a connected business ecosystem.',
+      title: "Seamless Tool Integration",
+      icon: <FaGgCircle size={30} />,
+      desc: "Integrate CRM with marketing, email, ERP, payment, and support tools for a connected ecosystem.",
     },
     {
-      icon: FaShieldCat,
-      title: 'Scalable & Secure Architecture',
-      description: 'Built to grow with your business, ensuring data security, role-based access, and long-term scalability.',
-    },
-  ];
-
-  const marketingFeatures = [
-    {
-      icon: FaBullseye,
-      title: 'Audience Segmentation & Targeting',
-      description: 'CRM enables precise customer segmentation, allowing marketers to run highly targeted and relevant campaigns.',
-    },
-    {
-      icon: FaEnvelope,
-      title: 'Personalized Marketing Campaigns',
-      description: 'Use customer data to personalize emails, offers, and messaging, improving engagement and conversion rates.',
-    },
-    {
-      icon: FaChartBar,
-      title: 'Campaign Performance Tracking',
-      description: 'Track leads, conversions, and customer journeys to measure campaign effectiveness and ROI accurately.',
-    },
-    {
-      icon: FaClock,
-      title: 'Customer Lifecycle Management',
-      description: 'CRM helps nurture leads through every stage — from awareness to retention — ensuring consistent and meaningful marketing interactions.',
+      title: "Scalable & Secure CRM",
+      icon: <FaShieldCat size={30} />,
+      desc: "Enterprise-grade security, role-based access, and scalable architecture that grows with your business.",
     },
   ];
 
-  const whyChoose = [
-    'Custom CRM solutions tailored to your business processes',
-    'Expertise in cloud-based and on-premise CRM systems',
-    'Seamless integration with sales, marketing, and support tools',
-    'Automation to reduce manual work and increase productivity',
-    'Secure data handling and role-based access control',
-    'Continuous support, optimization, and scalability',
+  const marketingRole = [
+    {
+      title: "Audience Segmentation",
+      icon: <FaBullseye size={30} />,
+      desc: "Segment customers based on behavior, demographics, and engagement to run highly targeted campaigns.",
+    },
+    {
+      title: "Personalized Campaigns",
+      icon: <FaEnvelope size={30} />,
+      desc: "Create personalized email and marketing campaigns that increase engagement and conversions.",
+    },
+    {
+      title: "Campaign Performance Tracking",
+      icon: <FaChartBar size={30} />,
+      desc: "Track leads, conversions, and ROI to understand what campaigns perform best.",
+    },
+    {
+      title: "Customer Lifecycle Management",
+      icon: <FaClock size={30} />,
+      desc: "Manage customers across every stage — from acquisition to retention and loyalty.",
+    },
   ];
 
-  const businessBenefits = [
-    'Improve customer engagement and retention',
-    'Increase sales team productivity',
-    'Gain visibility into sales performance',
-    'Reduce response time and manual effort',
-    'Make data-driven business decisions',
-    'Build long-term customer relationships',
-  ];
-
-  const industries = [
-    'Real Estate',
-    'Healthcare & Education',
-    'Banking & Finance',
-    'Retail & E-Commerce',
-    'Service-Based Businesses',
-    'B2B & Enterprise Companies',
-  ];
 
   return (
-    <div className="bg-white text-gray-900 min-h-screen">
-      <Navbar />
+    <main className="pt-32 bg-white">
+      {/* BREADCRUMB + HERO */}
+      <section className="mx-auto max-w-6xl px-6 mb-12">
+        <nav className="text-sm text-gray-800 mb-4">
+          <Link href="/" className="hover:text-red-500 font-bold">
+            Home
+          </Link>{" "}
+          &gt;{" "}
+          <Link href="/services" className="hover:text-red-500 font-bold">
+            Services
+          </Link>{" "}
+          &gt;{" "}
+          <span className="font-semibold text-gray-500">
+            Customer Relationship Management
+          </span>
+        </nav>
 
-      {/* Breadcrumb + Hero Section */}
-      <section className="pt-24 pb-16 md:pb-20  md:px-12">
-        <div className="max-w-7xl mx-auto">
-          <nav className="text-sm px-6 text-gray-800 mb-4">
-            <Link href="/" className="hover:text-red-500 font-bold">
-              Home
-            </Link>{' '}
-            &gt;{' '}
-            <Link href="/services" className="hover:text-red-500 font-bold">
-              Services
-            </Link>{' '}
-            &gt;{' '}
-            <span className="font-semibold px-6 text-gray-500">Customer Relationship Management (CRM)</span>
-          </nav>
-
-          <div>
-            <h1 className="text-red-500 text-3xl md:text-4xl px-6 font-bold mb-4">Customer Relationship Management (CRM)</h1>
-            <p className="text-gray-700 text-lg md:text-xl px-6 max-w-3xl leading-relaxed">
-              Streamline customer relationships, improve sales efficiency, and enhance customer engagement with Govira's powerful CRM solutions. 
-              We design and implement CRM systems that centralize data, automate workflows, and help your teams close more deals.
-            </p>
-          </div>
-        </div>
+        <h1 className="text-5xl md:text-4xl font-semibold text-red-500">
+          CRM Solutions
+        </h1>
+        <p className="mt-3 text-lg text-gray-600 max-w-5xl">
+          Govira CRM solutions help businesses manage customers, automate sales,
+          and improve engagement through data-driven insights and intelligent
+          workflows.
+        </p>
       </section>
 
-      {/* Services Grid */}
-      <section className="py-8 md:py-12 px-6 md:px-12">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-center text-3xl md:text-4xl font-bold mb-12 text-gray-900">
-            Key CRM Features
-          </h2>
+      {/* CRM PROCESS */}
+      <section className="mt-8 mx-auto max-w-6xl px-6">
+        <h2 className="text-3xl font-semibold text-center mb-12">
+          Key CRM Features
+        </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {keyPoints.map((point, index) => {
-              const Icon = point.icon;
-              return (
-                <div key={index} className="bg-white rounded-xl shadow hover:shadow-lg transition-all">
-                  <div className="flex items-start gap-4 p-6">
-                    <Icon className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
-                    <div className="h-7 w-[2px] bg-gray-900" />
-                    <div>
-                      <h3 className="text-lg font-semibold text-gray-900">{point.title}</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed mt-2">{point.description}</p>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Integral Role of CRM in Marketing Section */}
-      <section className="py-16 md:py-20 px-6 md:px-12 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-center text-3xl md:text-4xl font-bold mb-12 text-gray-900">
-            Integral Role of CRM in Marketing
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {marketingFeatures.map((feature, index) => {
-              const Icon = feature.icon;
-              return (
-                <div key={index} className="bg-white rounded-xl shadow hover:shadow-lg transition-all">
-                  <div className="flex items-start gap-4 p-6">
-                    <Icon className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
-                    <div className="h-7 w-[2px] bg-gray-900" />
-                    <div>
-                      <h3 className="text-lg font-semibold text-gray-900">{feature.title}</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed mt-2">{feature.description}</p>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Business Benefits & Industries */}
-      <section className="py-16 md:py-20 px-6 md:px-12">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {/* Left Column - Business Benefits */}
-            <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-8 text-gray-900">
-                How CRM Helps Clients Succeed
-              </h2>
-
-              <ul className="space-y-4">
-                {businessBenefits.map((item, index) => (
-                  <li key={index} className="flex items-start gap-3 text-gray-700">
-                    <span className="w-2 h-2 bg-red-500 rounded-full flex-shrink-0 mt-2"></span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Right Column - Industries */}
-            <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-8 text-gray-900">
-                Industries We Serve
-              </h2>
-
-              <ul className="space-y-4">
-                {industries.map((industry, index) => (
-                  <li key={index} className="flex items-start gap-3 text-gray-700">
-                    <span className="w-2 h-2 bg-red-500 rounded-full flex-shrink-0 mt-2"></span>
-                    <span>{industry}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Final CTA */}
-      <section className="mt-20 text-center px-6 md:px-12">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl font-semibold mb-6">Ready to Implement a Smarter CRM System?</h2>
-          <p className="text-gray-600 mb-8">
-            Transform the way you manage customers and grow your business with Govira's CRM solutions.
-          </p>
-          <div className="flex justify-center gap-6 flex-wrap">
-            <Link href="/contact" className="rounded-full bg-red-600 px-8 py-3 text-white hover:bg-red-700 transition">
-              Talk to Our CRM Experts
-            </Link>
-            <a
-              href="https://wa.me/91 9701935111"
-              className="rounded-full border border-green-600 px-8 py-3 text-green-600 hover:bg-green-600 hover:text-white transition"
+        <div className="grid md:grid-cols-3 gap-8">
+          {processSteps.map((step) => (
+            <div
+              key={step.title}
+              className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center"
             >
-              Chat on WhatsApp
-            </a>
-          </div>
+              <div className="flex items-center gap-4 mb-2">
+                <div className="text-red-600 mb-4">{step.icon}</div>
+                <h3 className="font-semibold text-lg">{step.title}</h3>
+              </div>
+              <p className="text-gray-600 text-left">{step.desc}</p>
+            </div>
+          ))}
         </div>
       </section>
 
+      {/* CRM IN MARKETING */}
+      <section className="mt-20 mx-auto max-w-6xl px-6">
+        <h2 className="text-3xl font-semibold text-center text-red-500 mb-12">
+          CRM’s Role in Marketing
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          {marketingRole.map((item) => (
+            <div
+              key={item.title}
+              className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center"
+            >
+              <div className="flex items-center gap-4 mb-2">
+                <div className="text-red-600 mb-4">{item.icon}</div>
+                <h3 className="font-semibold text-lg">{item.title}</h3>
+              </div>
+              <p className="text-gray-600 text-left">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+
+      {/* WHO THIS IS FOR */}
+      <section className="mt-20 mx-auto text-center max-w-6xl px-6">
+        <h2 className="text-3xl font-semibold text-red-500 mb-6">Who This is For</h2>
+        <p>
+          Businesses looking to improve customer relationships, sales efficiency,
+          and marketing performance using a centralized CRM platform.
+        </p>
+      </section>
+
+      {/* BUSINESS NEED */}
+      <section className="mt-12 mx-auto max-w-6xl px-6">
+        <h3 className="text-3xl font-bold mb-3 text-center">
+          Does Your Business Need a CRM System?
+        </h3>
+        <p className="mb-4 text-center">
+          Managing customers manually leads to missed opportunities, slow
+          follow-ups, and poor customer experiences. A CRM system centralizes
+          everything and enables smarter decisions.
+        </p>
+        <p className="text-center">
+          Govira CRM solutions help you automate, analyze, and scale customer
+          relationships effectively.
+        </p>
+      </section>
+
+      {/* CTA */}
+      <section className="mt-20 text-center px-6">
+        <h2 className="text-3xl font-semibold mb-6">
+          Ready to Build a Smarter CRM?
+        </h2>
+        <p className="text-gray-600 mb-8">
+          Empower your sales and marketing teams with Govira’s CRM solutions.
+        </p>
+        <div className="flex justify-center gap-6 flex-wrap">
+          <Link
+            href="/contact"
+            className="rounded-full bg-red-600 px-8 py-3 text-white hover:bg-red-700 transition"
+          >
+            Contact Us
+          </Link>
+          <a
+            href="https://wa.me/919701935111"
+            className="rounded-full border border-green-600 px-8 py-3 text-green-600 hover:bg-green-600 hover:text-white transition"
+          >
+            Chat on WhatsApp
+          </a>
+        </div>
+      </section>
       <Footer />
-    </div>
+    </main>
+
   );
 }

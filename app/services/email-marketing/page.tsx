@@ -93,7 +93,7 @@ export default function EmailMarketingPage() {
         <section className="bg-white pt-24 pb-16 md:pb-20 px-6 md:px-12">
           <div className="max-w-7xl mx-auto">
             {/* Breadcrumb */}
-            <nav className="text-sm text-gray-800 px-6 mb-4">
+            <nav className="text-sm text-gray-800 px-24 mb-4">
               <Link href="/" className="hover:text-red-500 font-bold">
                 Home
               </Link>{' '}
@@ -106,10 +106,10 @@ export default function EmailMarketingPage() {
             </nav>
 
             {/* Hero Content */}
-            <h1 className="text-2xl md:text-3xl px-6  font-bold text-red-600 mb-6">
+            <h1 className="text-2xl md:text-3xl px-24 font-bold text-red-600 mb-6">
               Email Marketing Services That Drive Engagement & Conversions
             </h1>
-            <p className="text-lg md:text-xl px-6  text-gray-700 max-w-3xl leading-relaxed">
+            <p className="text-lg md:text-xl px-24 text-gray-700 max-w-3xl leading-relaxed">
               Boost customer engagement, nurture leads, and increase conversions with Govira's result-driven email marketing services. 
               We create targeted, personalized, and automated email campaigns that deliver measurable ROI.
             </p>
