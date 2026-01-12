@@ -161,7 +161,7 @@ export default function BrandBooksLogosPage() {
             <h4 className="font-medium mb-4">Quick Links</h4>
             <ul className="space-y-2 text-[var(--muted)]">
               <li><Link href="/">Home</Link></li>
-              <li><Link href="/about">About Us</Link></li>
+              { /* <li><Link href="/about">About Us</Link></li> */}
               <li><Link href="/services">Our Services</Link></li>
               <li><Link href="/industries">Industries</Link></li>
               <li><Link href="/portfolio">Portfolio</Link></li>

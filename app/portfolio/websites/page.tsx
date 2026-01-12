@@ -2,17 +2,21 @@
 
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import {
-  FaFacebookF, FaInstagram, FaLinkedinIn,
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+
 type PortfolioItem = {
   title: string;
   category: string;
   imgSrc: string;
   link?: string;
 };
+
+// Footer Data
 const footerWebsiteServices = [
   { label: "Web Design", href: "/services/web-design" },
   { label: "Logo & Brand Book", href: "/services/branding" },
@@ -39,36 +43,38 @@ const footerDigitalMarketing = [
   { label: "Email Marketing", href: "/services/email-marketing" },
   { label: "Conversion Rate Optimization", href: "/services/conversion-optimization" },
 ];
+
+// Portfolio Data
 const portfolioItems: PortfolioItem[] = [
   {
-    title: "Veereance",
-    category: "E-Commerce Platform",
-    imgSrc: "/portfolio/veereance.jpg",
+    title: "E-Commerce Platform",
+    category: "",
+    imgSrc: "/logos/veeraence.png",
   },
   {
-    title: "Anchor Space",
-    category: "Website",
-    imgSrc: "/portfolio/anchor-space.jpg",
+    title: "Website",
+    category: "",
+    imgSrc: "/logos/anchor-space.jpeg",
   },
   {
-    title: "Raksha Safety App",
-    category: "Mobile App",
-    imgSrc: "/portfolio/raksha-safety.jpg",
+    title: "Mobile App",
+    category: "",
+    imgSrc: "/logos/raksha.jpg",
   },
   {
-    title: "Aditi Infrastructures",
-    category: "Website",
-    imgSrc: "/portfolio/aditi-infrastructures.jpg",
+    title: "Website",
+    category: "",
+    imgSrc: "/logos/aditi.jpeg",
   },
   {
-    title: "ARK Industries",
-    category: "Website",
-    imgSrc: "/portfolio/ark-industries.jpg",
+    title: "Website",
+    category: "",
+    imgSrc: "/logos/ark.png",
   },
   {
-    title: "Habit Tracker App",
-    category: "Mobile App",
-    imgSrc: "/portfolio/habit-tracker.jpg",
+    title: "Mobile App",
+    category: "",
+    imgSrc: "/logos/habit-tracker.png",
   },
 ];
 
@@ -99,40 +105,70 @@ export default function PortfolioPage() {
         </p>
       </section>
 
-
-      {/* Portfolio Grid */}
-      <section className="mx-auto max-w-6xl px-6 mb-20">
-        <h2 className="text-3xl font-semibold text-center mb-12">
-          Our Recent Projects
-        </h2>
-
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
-          {portfolioItems.map((item) => (
+      {/* PORTFOLIO GRID */}
+      <section className="mx-auto max-w-6xl px-6 mb-28">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {portfolioItems.map((item, idx) => (
             <div
-              key={item.title}
-              className="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden transition"
+              key={idx}
+              className="rounded-xl border bg-white overflow-hidden hover:shadow-lg transition"
             >
-              <Image
+              <img
                 src={item.imgSrc}
                 alt={item.title}
-                width={500}
-                height={300}
-                className="w-full h-56 object-cover"
+                className="w-full h-52 object-cover"
               />
-              <div className="p-6">
-                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-600">{item.category}</p>
-                {item.link && (
-                  <Link
-                    href={item.link}
-                    className="text-red-600 mt-4 inline-block hover:underline"
-                  >
-                    View Project
-                  </Link>
-                )}
+              <div className="p-5">
+                <h3 className="text-lg font-semibold">{item.title}</h3>
+                <p className="text-sm text-gray-500">{item.category}</p>
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* CLIENT LOGOS */}
+      <section className="mx-auto max-w-6xl px-6 mb-22">
+        <div className="relative overflow-hidden">
+          {/* Gradient fade edges */}
+          <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-white to-transparent z-10" />
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-white to-transparent z-10" />
+
+          {/* Scrolling container */}
+          <div className="flex w-max animate-scroll gap-16">
+            {[
+              "/logos/veeraence.png",
+              "/logos/anchor-space.jpeg",
+              "/logos/raksha.jpg",
+              "/logos/aditi.jpeg",
+              "/logos/ark-industries.png",
+              "/logos/habit-tracker.png",
+            ].map((logo, idx) => (
+              <img
+                key={idx}
+                src={logo}
+                alt="Client logo"
+                className="h-16 md:h-20 lg:h-24 w-auto object-contain transition"
+              />
+            ))}
+
+            {/* duplicate for seamless loop */}
+            {[
+              "/logos/veeraence.png",
+              "/logos/anchor-space.jpeg",
+              "/logos/raksha.jpg",
+              "/logos/aditi.jpeg",
+              "/logos/ark-industries.png",
+              "/logos/habit-tracker.png",
+            ].map((logo, idx) => (
+              <img
+                key={`dup-${idx}`}
+                src={logo}
+                alt="Client logo"
+                className="h-16 md:h-20 lg:h-24 w-auto object-contain transition"
+              />
+            ))}
+          </div>
         </div>
       </section>
 
@@ -147,7 +183,7 @@ export default function PortfolioPage() {
             Contact Us
           </Link>
           <a
-            href="https://wa.me/91 9701935111"
+            href="https://wa.me/919701935111"
             className="rounded-full border border-green-600 px-8 py-3 text-green-600 hover:bg-green-600 hover:text-white transition"
           >
             Chat on WhatsApp
@@ -180,7 +216,7 @@ export default function PortfolioPage() {
             <h4 className="font-medium mb-4">Quick Links</h4>
             <ul className="space-y-2 text-gray-500">
               <li><Link href="/">Home</Link></li>
-              <li><Link href="/about">About Us</Link></li>
+              { /* <li><Link href="/about">About Us</Link></li> */}
               <li><Link href="/services">Our Services</Link></li>
               <li><Link href="/industries">Industries</Link></li>
               <li><Link href="/portfolio">Portfolio</Link></li>
@@ -236,7 +272,7 @@ export default function PortfolioPage() {
               <a href="mailto:support@govira.tech" className="block text-gray-500 hover:text-red-600">
                 support@govira.tech
               </a>
-              <a href="tel:+91 97019 35111" className="block text-gray-500 hover:text-red-600">
+              <a href="tel:+919701935111" className="block text-gray-500 hover:text-red-600">
                 INDIA +91 97019 35111, +91 92466 18353
               </a>
             </div>

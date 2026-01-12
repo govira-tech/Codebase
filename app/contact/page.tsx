@@ -92,6 +92,23 @@ export default function ContactPage() {
       return;
     }
 
+    // -----------------------------
+    // Validate phone (global)
+    // -----------------------------
+    const numericPhone = form.phone.replace(/\D/g, ""); // remove non-digits
+    if (numericPhone.length < 6 || numericPhone.length > 15) {
+      setStatus("Please enter a valid phone number.");
+      return;
+    }
+
+    // -----------------------------
+    // Validate date
+    // -----------------------------
+    if (!(form.preferredDate instanceof Date) || isNaN(form.preferredDate.getTime())) {
+      setStatus("Please select a valid date and time.");
+      return;
+    }
+
     setStatus("Sending…");
 
     const { error } = await supabase.from("contact_requests").insert([
@@ -274,7 +291,7 @@ export default function ContactPage() {
                 }
                 className="w-full border border-gray-300 rounded-lg px-3 py-2 mt-1"
               >
-                <option value="">please select</option>
+                <option value="">Please select</option>
                 {businessTypes.map((b) => (
                   <option key={b}>{b}</option>
                 ))}
@@ -290,7 +307,7 @@ export default function ContactPage() {
                 }
                 className="w-full border border-gray-300 rounded-lg px-3 py-2 mt-1"
               >
-                <option value="">please select</option>
+                <option value="">Please select</option>
                 {companyTurnoverOptions.map((t) => (
                   <option key={t}>{t}</option>
                 ))}
@@ -315,11 +332,10 @@ export default function ContactPage() {
               ].map((service) => (
                 <label
                   key={service}
-                  className={`flex items-center gap-2 px-3 py-2 rounded-full border cursor-pointer ${
-                    form.servicesArray.includes(service)
+                  className={`flex items-center gap-2 px-3 py-2 rounded-full border cursor-pointer ${form.servicesArray.includes(service)
                       ? "border-red-600 text-red-600"
                       : "border-gray-300 text-gray-700"
-                  }`}
+                    }`}
                 >
                   <input
                     type="checkbox"
@@ -342,11 +358,10 @@ export default function ContactPage() {
                     }}
                   />
                   <span
-                    className={`w-3 h-3 rounded-full border ${
-                      form.servicesArray.includes(service)
+                    className={`w-3 h-3 rounded-full border ${form.servicesArray.includes(service)
                         ? "bg-red-600 border-red-600"
                         : "border-gray-400"
-                    }`}
+                      }`}
                   ></span>
                   {service}
                 </label>
@@ -376,7 +391,7 @@ export default function ContactPage() {
                 }
                 className="w-full border border-gray-300 rounded-lg px-3 py-2 mt-1"
               >
-                <option value="">please select</option>
+                <option value="">Please select</option>
                 {monthlyBudgetOptions.map((b) => (
                   <option key={b}>{b}</option>
                 ))}
@@ -394,7 +409,7 @@ export default function ContactPage() {
                 }
                 className="w-full border border-gray-300 rounded-lg px-3 py-2 mt-1"
               >
-                <option value="">please select</option>
+                <option value="">Please select</option>
                 {startOptions.map((s) => (
                   <option key={s}>{s}</option>
                 ))}
@@ -450,7 +465,7 @@ export default function ContactPage() {
                 }
                 className="w-full border border-gray-300 rounded-lg px-3 py-2 mt-1"
               >
-                <option value="">please select</option>
+                <option value="">Please select</option>
                 {preferredModes.map((m) => (
                   <option key={m}>{m}</option>
                 ))}

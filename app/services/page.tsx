@@ -58,7 +58,7 @@ const webServices = [
     title: "E-Commerce",
     desc: "User-friendly e-commerce platforms that simplify operations and boost online sales.",
     icon: FaShoppingCart,
-    link: "/services/ecommerce",
+    link: "/services/e-commerce",
   },
   {
     title: "CRM Solutions",
@@ -97,13 +97,13 @@ const marketingServices = [
     title: "Local Listing Services",
     desc: "Improve local search visibility and attract high-intent nearby customers.",
     icon: FaMapMarkerAlt,
-    link: "/services/local-listing",
+    link: "",
   },
   {
     title: "Compelling Content",
     desc: "SEO-optimized content that informs, engages, and converts your audience.",
     icon: FaPenNib,
-    link: "/services/content-writing",
+    link: "/services/content-marketing",
   },
   {
     title: "Conversion Rate Optimization",
@@ -292,7 +292,7 @@ export default function ServicesPage() {
             <h4 className="font-medium mb-4">Quick Links</h4>
             <ul className="space-y-2 text-gray-500">
               <li><Link href="/">Home</Link></li>
-              <li><Link href="/about">About Us</Link></li>
+              { /* <li><Link href="/about">About Us</Link></li> */}
               <li><Link href="/services">Our Services</Link></li>
               <li><Link href="/industries">Industries</Link></li>
               <li><Link href="/portfolio">Portfolio</Link></li>
