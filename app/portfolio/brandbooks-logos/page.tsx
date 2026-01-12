@@ -209,7 +209,7 @@ export default function BrandBooksLogosPage() {
                 support@govira.tech
               </a>
               <a href="tel:+91 97019 35111" className="block text-[var(--muted)] hover:text-[var(--accent)] transition">
-                INDIA +91 97019 35111
+                INDIA +91 97019 35111, +91 92466 18353
               </a>
             </div>
           </div>
@@ -227,7 +227,7 @@ export default function BrandBooksLogosPage() {
             <a href="/portfolio" className="hover:text-white">Portfolio</a>
             <a href="/contact" className="hover:text-white">Contact</a>
           </div>
-          <p className="mt-2">© 2025 Govira Technologies Solutions. All rights reserved.</p>
+          <p className="mt-2">© 2026 Govira Technologies Solutions. All rights reserved.</p>
         </div>
       </footer>
     </main>

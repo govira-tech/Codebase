@@ -382,7 +382,7 @@ export default function WebDesignPage() {
                 support@govira.tech
               </a>
               <a href="tel:+91 97019 35111" className="block text-gray-500 hover:text-red-600">
-                INDIA +91 97019 35111
+                INDIA +91 97019 35111, +91 92466 18353
               </a>
             </div>
           </div>
@@ -400,7 +400,7 @@ export default function WebDesignPage() {
             <a href="/portfolio" className="hover:text-white">Portfolio</a>
             <a href="/contact" className="hover:text-white">Contact</a>
           </div>
-          <p className="mt-2">© 2025 Govira Technologies Solutions. All rights reserved.</p>
+          <p className="mt-2">© 2026 Govira Technologies Solutions. All rights reserved.</p>
         </div>
       </footer>
     </main>

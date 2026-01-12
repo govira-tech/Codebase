@@ -67,11 +67,6 @@ export default function EducationHealthcarePage() {
               Healthcare SEO is essential because patients are actively searching for health-related information online.
               Ranking high on search engines ensures that your practice is one of the first names they see—gaining trust and capturing leads.
             </p>
-
-            <p className="text-lg text-gray-600 mt-6 text-left">
-              When selecting a digital marketing agency for your medical or educational needs, consider their industry-specific expertise,
-              proven track record, and the services they offer. At Govira, we specialize in driving meaningful results with a deep understanding of the healthcare and education industries.
-            </p>
           </div>
 
           {/* GIF Section */}
@@ -93,39 +88,51 @@ export default function EducationHealthcarePage() {
 
           <div className="flex justify-center gap-12">
             <div className="flex flex-col items-center text-center text-gray-600">
-              <FaUserMd className="text-4xl text-red-600 mb-4"/>
+              <FaUserMd className="text-4xl text-red-600 mb-4" />
               <p className="font-semibold">Attract More Patients</p>
             </div>
             <div className="flex flex-col items-center text-center text-gray-600">
-              <FaGlobe className="text-4xl text-red-600 mb-4"/>
+              <FaGlobe className="text-4xl text-red-600 mb-4" />
               <p className="font-semibold">Increase Website Traffic</p>
             </div>
             <div className="flex flex-col items-center text-center text-gray-600">
-              <FaChartLine className="text-4xl text-red-600 mb-4"/>
+              <FaChartLine className="text-4xl text-red-600 mb-4" />
               <p className="font-semibold">Enhance Brand Awareness</p>
             </div>
             <div className="flex flex-col items-center text-center text-gray-600">
-              <FaSearch className="text-4xl text-red-600 mb-4"/>
+              <FaSearch className="text-4xl text-red-600 mb-4" />
               <p className="font-semibold">Improve Online Visibility</p>
             </div>
             <div className="flex flex-col items-center text-center text-gray-600">
-              <FaComments className="text-4xl text-red-600 mb-4"/>
+              <FaComments className="text-4xl text-red-600 mb-4" />
               <p className="font-semibold">Protect Your Online Reputation</p>
             </div>
           </div>
         </section>
 
         {/* SEO FOR HIGHER EDUCATION */}
-        <section className="mx-auto max-w-6xl px-6 mb-24">
-          <h2 className="text-3xl font-semibold text-left mb-6 ">
-            SEO for Higher Education Institutions
-          </h2>
+        <section className="mx-auto max-w-6xl px-6 mb-20 flex justify-between items-start">
+          {/* Text content */}
+          <div className="flex-1 pr-8">
+            <h2 className="text-3xl font-semibold text-left mb-6">
+              SEO for Education
+            </h2>
 
-          <p className="text-lg text-gray-600">
-            In the world of higher education, SEO plays a crucial role in driving prospective students to your website.
-            Without proper SEO, your institution could miss out on valuable organic traffic, making it harder for students to find you.
-            A well-optimized higher education website enhances visibility, builds trust, and leads to a stronger connection with future students.
-          </p>
+            <p className="text-lg text-gray-600 text-left">
+              In the world of higher education, SEO plays a crucial role in driving prospective students to your website.
+              Without proper SEO, your institution could miss out on valuable organic traffic, making it harder for students to find you.
+              A well-optimized higher education website enhances visibility, builds trust, and leads to a stronger connection with future students.
+            </p>
+          </div>
+
+          {/* GIF Section */}
+          <div className="flex-none w-1/3">
+            <img
+              src="/images/education-seo.png"
+              alt="Education SEO Services"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
         </section>
 
         {/* OPTIMIZING YOUR WEBSITE FOR PROSPECTIVE STUDENTS */}
@@ -136,23 +143,23 @@ export default function EducationHealthcarePage() {
 
           <div className="flex justify-center gap-12">
             <div className="flex flex-col items-center text-center text-gray-600">
-              <FaKey className="text-4xl text-red-600 mb-4"/>
+              <FaKey className="text-4xl text-red-600 mb-4" />
               <p className="font-semibold">Use Relevant Keywords</p>
             </div>
             <div className="flex flex-col items-center text-center text-gray-600">
-              <FaPenNib className="text-4xl text-red-600 mb-4"/>
+              <FaPenNib className="text-4xl text-red-600 mb-4" />
               <p className="font-semibold">Create Student-Centric Content</p>
             </div>
             <div className="flex flex-col items-center text-center text-gray-600">
-              <FaMobileAlt className="text-4xl text-red-600 mb-4"/>
+              <FaMobileAlt className="text-4xl text-red-600 mb-4" />
               <p className="font-semibold">Improve Mobile Experience</p>
             </div>
             <div className="flex flex-col items-center text-center text-gray-600">
-              <FaSearch className="text-4xl text-red-600 mb-4"/>
+              <FaSearch className="text-4xl text-red-600 mb-4" />
               <p className="font-semibold">Optimize Navigation & CTAs</p>
             </div>
             <div className="flex flex-col items-center text-center text-gray-600">
-              <FaBolt className="text-4xl text-red-600 mb-4"/>
+              <FaBolt className="text-4xl text-red-600 mb-4" />
               <p className="font-semibold">Boost Page Speed & SEO Tags</p>
             </div>
           </div>

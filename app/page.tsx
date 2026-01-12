@@ -680,7 +680,7 @@ export default function HomePage() {
             Contact Us
           </Link>
           <a
-            href="https://wa.me/91 9701935111"
+            href="https://wa.me/919701935111"
             className="rounded-full border border-green-600 px-8 py-3 text-green-600 hover:bg-green-600 hover:text-white transition"
           >
             Chat on WhatsApp
@@ -795,7 +795,7 @@ export default function HomePage() {
                 href="tel:+91 97019 35111"
                 className="block text-[var(--muted)] hover:text-[var(--accent)] transition"
               >
-                INDIA +91 97019 35111
+                INDIA +91 97019 35111, +91 92466 18353
               </a>
             </div>
           </div>
@@ -815,7 +815,7 @@ export default function HomePage() {
             <a href="/portfolio" className="hover:text-white">Portfolio</a>
             <a href="/contact" className="hover:text-white">Contact</a>
           </div>
-          <p className="mt-2">© 2025 Govira Technologies Solutions. All rights reserved.</p>
+          <p className="mt-2">© 2026 Govira Technologies Solutions. All rights reserved.</p>
         </div>
       </footer>
 

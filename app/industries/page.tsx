@@ -153,7 +153,7 @@ export default function IndustriesPage() {
             Contact Us
           </Link>
           <a
-            href="https://wa.me/91 9701935111"
+            href="https://wa.me/919701935111"
             className="rounded-full border border-green-600 px-8 py-3 text-green-600 hover:bg-green-600 hover:text-white transition"
           >
             Chat on WhatsApp

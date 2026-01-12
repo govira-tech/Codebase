@@ -35,27 +35,40 @@ export default function ConsumerGoodsPage() {
           How SEO Drives Sales for Consumer Goods Companies
         </h2>
 
-        <p className="text-gray-600 text-lg text-center max-w-4xl mx-auto mb-8">
+        <p className="text-gray-600 text-lg text-center max-w-4xl mx-auto mb-14">
           Understanding why visitors come to your website is key to driving sales. Studies show:
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto text-gray-700 text-lg">
-          <div className="flex justify-between border-b py-2">
-            <span>30%</span>
-            <span>Visited specifically for the company website</span>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 max-w-5xl mx-auto text-center">
+
+          <div>
+            <div className="text-4xl font-bold text-red-600 mb-3">30%</div>
+            <p className="text-gray-700 text-lg">
+              Visited specifically for the company website
+            </p>
           </div>
-          <div className="flex justify-between border-b py-2">
-            <span>73%</span>
-            <span>Were researching products</span>
+
+          <div>
+            <div className="text-4xl font-bold text-red-600 mb-3">73%</div>
+            <p className="text-gray-700 text-lg">
+              Were researching products
+            </p>
           </div>
-          <div className="flex justify-between border-b py-2">
-            <span>64%</span>
-            <span>Needed help with purchase decisions</span>
+
+          <div>
+            <div className="text-4xl font-bold text-red-600 mb-3">64%</div>
+            <p className="text-gray-700 text-lg">
+              Needed help with purchase decisions
+            </p>
           </div>
-          <div className="flex justify-between border-b py-2">
-            <span>50%</span>
-            <span>Were looking for promotions or offers</span>
+
+          <div>
+            <div className="text-4xl font-bold text-red-600 mb-3">50%</div>
+            <p className="text-gray-700 text-lg">
+              Were looking for promotions or offers
+            </p>
           </div>
+
         </div>
       </section>
 
@@ -87,10 +100,13 @@ export default function ConsumerGoodsPage() {
 
           {/* Right side GIF placeholder */}
           <div className="flex justify-center">
-            <img
-              src="/gifs/consumer-goods-animation.gif"
-              alt="Consumer Goods Marketing Animation"
-              className="rounded-xl shadow-lg"
+            <video
+              src="/videos/consumer-goods-animation.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="rounded-xl shadow-lg max-w-full"
             />
           </div>
         </div>

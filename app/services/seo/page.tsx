@@ -11,21 +11,21 @@ import Footer from "@/components/footer/Footer";
 type FooterLink = {
   label: string;
   href: string;
-};  
+};
 
 const seoServices = [
-  { title: "On-Page SEO", icon: <FaSearch size={28} className="text-red-600"/> },
-  { title: "Off-Page SEO", icon: <FaLink size={28} className="text-red-600"/> },
-  { title: "Technical SEO", icon: <FaCogs size={28} className="text-red-600"/> },
-  { title: "Link Building", icon: <FaRobot size={28} className="text-red-600"/> },
-  { title: "Site Audit", icon: <FaClipboardList size={28} className="text-red-600"/> },
-  { title: "Keyword Analysis", icon: <FaChartLine size={28} className="text-red-600"/> },
-  { title: "SSL Implementation", icon: <FaGlobe size={28} className="text-red-600" /> },
-  { title: "Competitor Analysis", icon: <FaUsers size={28} className="text-red-600"/> },
-  { title: "Google Analytics Integration", icon: <FaChartLine size={28} className="text-red-600"/> },
-  { title: "Google Business Listing", icon: <FaGlobe size={28} className="text-red-600"/> },
-  { title: "Content Creation & Optimization", icon: <FaPenNib size={28} className="text-red-600"/> },
-  { title: "Google Ads Management", icon: <FaChartLine size={28} className="text-red-600"/> },
+  { title: "On-Page SEO", icon: <FaSearch size={28} /> },
+  { title: "Off-Page SEO", icon: <FaLink size={28} /> },
+  { title: "Technical SEO", icon: <FaCogs size={28} /> },
+  { title: "Link Building", icon: <FaRobot size={28} /> },
+  { title: "Site Audit", icon: <FaClipboardList size={28} /> },
+  { title: "Keyword Analysis", icon: <FaChartLine size={28} /> },
+  { title: "SSL Implementation", icon: <FaGlobe size={28} /> },
+  { title: "Competitor Analysis", icon: <FaUsers size={28} /> },
+  { title: "Google Analytics Integration", icon: <FaChartLine size={28} /> },
+  { title: "Google Business Listing", icon: <FaGlobe size={28} /> },
+  { title: "Content Creation & Optimization", icon: <FaPenNib size={28} /> },
+  { title: "Google Ads Management", icon: <FaChartLine size={28} /> },
 ];
 
 const footerDigitalMarketing: FooterLink[] = [
@@ -63,7 +63,7 @@ const footerWebsiteServices: FooterLink[] = [
   { label: "Web Design", href: "/services/web-design" },
   { label: "E-Commerce", href: "/services/ecommerce" },
   { label: "CRM Solutions", href: "/services/crm" },
-  { label: "Lead Management", href: "/services/lead-generation-campaigns" },
+  { label: "Lead Management", href: "/services/lead-management" },
 ];
 
 const footerIndustries: FooterLink[] = [
@@ -99,33 +99,25 @@ export default function SEOPage() {
           <span className="font-semibold text-gray-500">SEO Services</span>
         </nav>
 
+        {/* Our Comprehensive SEO Services */}
+        <section className="mt-8 mx-auto max-w-6xl px-6 mb-20">
+          <h2 className="text-3xl font-semibold text-center mb-12">Our Comprehensive SEO Services</h2>
+          <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-8">
+            {seoServices.map((service) => (
+              <div
+                key={service.title}
+                className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition flex items-center gap-2"
+              >
+                {/* Service Icon and Title with Separator */}
+                <div className="text-red-600">{service.icon}</div>
+                <div className="h-[28px] w-[1px] bg-gray-900 mx-2" />
+                <span className="font-medium text-gray-800 font-inter"> {service.title}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Page Heading */}
-        <h1 className="text-5xl md:text-4xl font-semibold text-red-500">SEO Services</h1>
-        <p className="mt-3 text-lg text-gray-600 max-w-7xl">
-          SEO built for long-term growth, not quick wins. Govira Technologies, the premier digital marketing agency in Vizag, helps enhance your website's organic ranking through a strategic blend of on-page and off-page SEO.
-        </p>
-      </section>
-
-      {/* Our Comprehensive SEO Services */}
-      <section className="mt-8 mx-auto max-w-6xl px-6">
-        <h2 className="text-3xl font-semibold text-center mb-12">Our Comprehensive SEO Services</h2>
-        <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-8">
-          {seoServices.map((service) => (
-            <div
-              key={service.title}
-              className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition flex items-center gap-2"
-            >
-              {/* Service Icon and Title with Separator */}
-              {service.icon}
-              <div className="h-[28px] w-[1px] bg-gray-900 mx-2" />
-              <span className="font-medium text-gray-800 font-inter"> {service.title}</span>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* SEO Plans & Pricing */}
-      <section className="mt-20 mx-auto max-w-7xl px-6">
         <h2 className="text-3xl font-semibold text-center mb-14">
           Our Tailored SEO Plans & Pricing
         </h2>
@@ -137,14 +129,14 @@ export default function SEOPage() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
           {/* ---------------- SILVER ---------------- */}
-          <div className="rounded-xl shadow bg-white overflow-hidden border">
+          <div className="rounded-xl shadow bg-white overflow-hidden border flex flex-col h-full">
             <div className="bg-blue-100 text-center py-6">
               <h3 className="text-2xl font-bold text-blue-700">SILVER</h3>
               <p className="text-4xl font-extrabold mt-2">10</p>
               <p className="text-gray-600 text-sm mt-1">SEO Keyword Sets</p>
             </div>
 
-            <div className="p-6 text-sm leading-relaxed space-y-4">
+            <div className="p-6 text-sm leading-relaxed gap-4 flex flex-col flex-1">
               {/* ON-PAGE */}
               <ul className="space-y-2 text-gray-700">
                 <li className="font-semibold text-gray-900">ON-PAGE SEO</li>
@@ -200,7 +192,7 @@ export default function SEOPage() {
                 <li className="flex gap-2"><span className="text-green-600 font-bold">✔</span>Claim Listings</li>
               </ul>
 
-              <button className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg mt-6">
+              <button className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg mt-auto">
                 Contact Us
               </button>
             </div>
@@ -208,14 +200,14 @@ export default function SEOPage() {
 
 
           {/* ---------------- GOLD ---------------- */}
-          <div className="rounded-xl shadow bg-white overflow-hidden border">
+          <div className="rounded-xl shadow bg-white overflow-hidden border flex flex-col h-full">
             <div className="bg-yellow-100 text-center py-6">
               <h3 className="text-2xl font-bold text-yellow-700">GOLD</h3>
               <p className="text-4xl font-extrabold mt-2">20</p>
               <p className="text-gray-600 text-sm mt-1">SEO Keyword Sets</p>
             </div>
 
-            <div className="p-6 text-sm leading-relaxed space-y-4">
+            <div className="p-6 text-sm leading-relaxed gap-4 flex flex-col flex-1">
               {/* ON-PAGE (same as silver) */}
               <ul className="space-y-2 text-gray-700">
                 <li className="font-semibold text-gray-900">ON-PAGE SEO</li>
@@ -271,7 +263,7 @@ export default function SEOPage() {
                 <li className="flex gap-2"><span className="text-green-600 font-bold">✔</span>Claim Listings</li>
               </ul>
 
-              <button className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg mt-6">
+              <button className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg mt-auto">
                 Contact Us
               </button>
             </div>
@@ -279,14 +271,14 @@ export default function SEOPage() {
 
 
           {/* ---------------- PLATINUM ---------------- */}
-          <div className="rounded-xl shadow bg-white overflow-hidden border">
+          <div className="rounded-xl shadow bg-white overflow-hidden border flex flex-col h-full">
             <div className="bg-green-100 text-center py-6">
               <h3 className="text-2xl font-bold text-green-700">PLATINUM</h3>
               <p className="text-4xl font-extrabold mt-2">30</p>
               <p className="text-gray-600 text-sm mt-1">SEO Keyword Sets</p>
             </div>
 
-            <div className="p-6 text-sm leading-relaxed space-y-4">
+            <div className="p-6 text-sm leading-relaxed gap-4 flex flex-col flex-1">
               {/* ON-PAGE (same as silver + gold) */}
               <ul className="space-y-2 text-gray-700">
                 <li className="font-semibold text-gray-900">ON-PAGE SEO</li>
@@ -342,7 +334,7 @@ export default function SEOPage() {
                 <li className="flex gap-2"><span className="text-green-600 font-bold">✔</span>Claim Listings</li>
               </ul>
 
-              <button className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg mt-6">
+              <button className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg mt-auto">
                 Contact Us
               </button>
             </div>
@@ -350,14 +342,14 @@ export default function SEOPage() {
 
 
           {/* ---------------- DIAMOND ---------------- */}
-          <div className="rounded-xl shadow bg-white overflow-hidden border">
+          <div className="rounded-xl shadow bg-white overflow-hidden border flex flex-col h-full">
             <div className="bg-purple-100 text-center py-6">
               <h3 className="text-2xl font-bold text-purple-700">DIAMOND</h3>
               <p className="text-4xl font-extrabold mt-2">50</p>
               <p className="text-gray-600 text-sm mt-1">SEO Keyword Sets</p>
             </div>
 
-            <div className="p-6 text-sm leading-relaxed space-y-4">
+            <div className="p-6 text-sm leading-relaxed gap-4 flex flex-col flex-1">
 
               {/* ADVANCED ON-PAGE FOR DIAMOND */}
               <ul className="space-y-2 text-gray-700">
@@ -413,7 +405,7 @@ export default function SEOPage() {
                 <li className="flex gap-2"><span className="text-green-600 font-bold">✔</span>Claim Listings</li>
               </ul>
 
-              <button className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg mt-6">
+              <button className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg mt-auto">
                 Contact Us
               </button>
             </div>
@@ -436,7 +428,7 @@ export default function SEOPage() {
             Contact Us
           </Link>
           <a
-            href="https://wa.me/91 9701935111"
+            href="https://wa.me/919701935111"
             className="rounded-full border border-green-600 px-8 py-3 text-green-600 hover:bg-green-600 hover:text-white transition"
           >
             Chat on WhatsApp
@@ -444,6 +436,7 @@ export default function SEOPage() {
         </div>
       </section>
 
+      {/* Pre-Footer + Footer */}
       <Footer />
     </main>
   );
