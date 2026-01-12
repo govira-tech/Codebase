@@ -109,7 +109,7 @@ export default function EmailMarketingPage() {
             <h1 className="text-2xl md:text-3xl px-24 font-bold text-red-600 mb-6">
               Email Marketing Services That Drive Engagement & Conversions
             </h1>
-            <p className="text-lg md:text-xl px-24 text-gray-700 max-w-3xl leading-relaxed">
+            <p className="mt-3 text-lg text-gray-600 max-w-5xl px-24">
               Boost customer engagement, nurture leads, and increase conversions with Govira's result-driven email marketing services. 
               We create targeted, personalized, and automated email campaigns that deliver measurable ROI.
             </p>
@@ -117,9 +117,9 @@ export default function EmailMarketingPage() {
         </section>
 
         {/* Our Email Marketing Services */}
-        <section className="bg-white py-8 md:py-12 px-6 md:px-12">
-          <div className="max-w-7xl mx-auto px-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+        <section className="bg-white py-8 md:py-8 px-6 md:px-12">
+          <div className="max-w-7xl mx-auto px-24">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 -mt-6">
               Our Email Marketing Services
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -149,7 +149,7 @@ export default function EmailMarketingPage() {
 
         {/* Email Marketing Features We Deliver */}
         <section className="bg-white py-8 md:py-12 px-6 md:px-12">
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-7xl mx-auto px-24">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
               Email Marketing Features We Deliver
             </h2>
@@ -182,7 +182,7 @@ export default function EmailMarketingPage() {
 
         {/* How Email Marketing Helps Your Business Grow & Why Choose Govira */}
         <section className="bg-white py-8 md:py-12 px-6 md:px-12">
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-7xl mx-auto px-24">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {/* How Email Marketing Helps */}
               <div>

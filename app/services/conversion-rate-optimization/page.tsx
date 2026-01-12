@@ -88,7 +88,7 @@ export default function ConversionRateOptimizationPage() {
         <section className="bg-white pt-24 pb-16 md:pb-20 px-4 md:px-12">
           <div className="max-w-7xl mx-auto">
             {/* Breadcrumb */}
-            <nav className="text-sm px-6  text-gray-800 mb-4">
+            <nav className="text-sm px-24  text-gray-800 mb-4">
               <Link href="/" className="hover:text-red-500 font-bold">
                 Home
               </Link>{' '}
@@ -101,10 +101,10 @@ export default function ConversionRateOptimizationPage() {
             </nav>
 
             {/* Hero Content */}
-            <h1 className="text-2xl px-6 md:text-3xl font-bold text-red-600 mb-6">
+            <h1 className="text-2xl px-24 md:text-3xl font-bold text-red-600 mb-6">
               Conversion Rate Optimization Services That Turn Visitors into Customers
             </h1>
-            <p className="text-lg md:text-xl px-6 text-gray-700 max-w-3xl leading-relaxed">
+            <p className="mt-3 text-lg px-24 text-gray-600 max-w-5xl">
               Maximize the value of your website traffic with Govira's Conversion Rate Optimization services. 
               We analyze user behavior, remove friction points, and optimize user journeys to increase conversions and revenue.
             </p>
@@ -113,7 +113,7 @@ export default function ConversionRateOptimizationPage() {
 
         {/* Our CRO Services */}
         <section className="bg-white py-8 md:py-12 px-6 md:px-12">
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-7xl mx-auto px-24 -mt-6">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
               Our Conversion Rate Optimization Services
             </h2>
@@ -144,7 +144,7 @@ export default function ConversionRateOptimizationPage() {
 
         {/* CRO Features We Deliver */}
         <section className="bg-white py-8 md:py-12 px-6 md:px-12">
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-7xl mx-auto px-24">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
               CRO Features We Deliver
             </h2>
@@ -177,7 +177,7 @@ export default function ConversionRateOptimizationPage() {
 
         {/* How CRO Helps Your Business Grow & Why Choose Govira */}
         <section className="bg-white py-8 md:py-12 px-6 md:px-12">
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-7xl mx-auto px-24">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {/* How CRO Helps */}
               <div>

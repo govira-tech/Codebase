@@ -114,7 +114,7 @@ export default function ContentMarketingPage() {
         {/* Our Content Marketing Services */}
         <section className="bg-white py-8 md:py-12 px-6 md:px-12">
           <div className="max-w-7xl mx-auto px-24">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 -mt-8">
               Our Content Marketing Services
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
